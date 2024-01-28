@@ -8,6 +8,22 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
+/*RESET BUTTONS*/
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+}
+
 /*VARIABLES */
 
 :root {
@@ -18,12 +34,20 @@
   --green-text: rgb(59, 182, 59);
 }
 
+/*VARIABLES */
+
 body {
+width: auto;
+}
+
+#ohparch-app {
+  margin: auto;
   width: 375px;
-  height: 90vh;
+  height: 100vh;
   border: black 8px double;
   border-radius: 13%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   position: relative;
 }
 
@@ -31,10 +55,13 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* background-color: var(--color-navs-bar); */
+  background-color:var(--main-pink-color) ;
   border-bottom: black 2px solid;
   padding: 10px;
   border-radius: 15% 15% 0% 0%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .box-logo {
@@ -58,6 +85,9 @@ header {
   width: 52%;
   text-align: end;
   font-size: 12px;
+  color: white;
+  margin-right: 5px;
+  text-align: center;
 }
 
 .box-nickname p > i {
@@ -82,10 +112,13 @@ header {
 
 /*END HEADER NAV*/
 
+/*START OPTIONS TOP*/
+
 #section-container-top-sections {
   width: 100%;
   display: flex;
-  margin-top: 10px;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 
 .container-box-left-top-sections {
@@ -127,6 +160,7 @@ header {
 
 .input-buscar {
   width: 100%;
+  height: 100%;
   border: 0;
   position: absolute;
   background: transparent;
@@ -148,7 +182,7 @@ header {
 #section-container-content {
   padding: 8px;
   width: 100%;
-  background-color: #f7f7f7;
+
 }
 
 .box-principal-title {
@@ -280,6 +314,7 @@ header {
   color: var(--green-text);
 }
 
+
 /* description event*/
 
 .bot-post-description {
@@ -301,6 +336,217 @@ header {
 .box-post-reactions {
   margin: 7px 0px 7px 0px;
   width: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.box-post-reactions a{
+  font-size: 12px;
 }
 
 /*START MAIN CONTENT*/
+
+
+/*BOT MENU - FIXED */
+
+#menu-bot{
+  width: 100%;
+  height: 80px;
+  background-color: var(--main-pink-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: sticky;
+  border-top:black 2px solid;
+
+}
+
+.boxes-menu-bot{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.boxes-menu-bot i{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.boxes-menu-bot span{
+  font-size: 10px;
+  font-weight: 300;
+  color: white;
+}
+
+/*  START ALMOST-HAPPENING SECTION*/
+
+#section-almost-happening{
+width: 100%;
+height: auto;
+}
+
+.box-title-almost-happening{
+  width: 100%;
+  height: 70px;
+  background-color: var(--main-pink-color);
+  margin: 10px 0px 10px 0px;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.box-title-almost-happening h3{
+  color: white;
+  width: 80%;
+  height: auto;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+
+}
+
+/*CARROUSEL ALMOST HAPPENIGN*/
+
+.box-container-carrousel-events{
+  width: 4000px;
+  height: 250px;
+  padding: 4px;
+  display: flex;
+  gap: 20px;
+  background-image: var(--color-navs-bar);
+  overflow: scroll;
+}
+
+.box-carrousel-event{
+  width: 220px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  overflow: hidden;
+  background-color: rgb(244, 255, 127);
+}
+
+
+
+.box-carrousel-event img{
+  width: 100%;
+  height: 100px;
+}
+
+.box-description-event-carrousel{
+  margin: 2px 2px 2px 2px;
+  width: 100%;
+}
+
+.box-description-event-carrousel h4{
+  font-size: 18px;
+  margin-left: 3px;
+  font-weight: 600;
+}
+
+.box-description-event-carrousel span{
+  font-size: 19px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.box-mid-description{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 12px;
+}
+
+.disantance-box{
+  width: 100%;
+  display: flex;
+  margin-left: 8px;
+
+}
+
+.distance-from-event{
+width: 100%;
+font-style: italic;
+}
+
+.disantance-box i{
+  font-size: 15px;
+  color: var(--main-pink-color);
+  margin-right: 4px;
+}
+
+.info-event{
+  width: 100%;
+  display: flex;
+justify-content: space-evenly;
+  align-items: center;
+  margin: 2px 2px 5px 3px;
+  font-weight: 400;
+
+}
+
+.date-event{
+  width: auto;
+}
+
+.hour-event{
+  width: auto;
+}
+
+.bot-description-event{
+  width: 100%;
+  padding: 0px 5px 5px 5px ;
+  border: black 1px solid;
+  margin-bottom: 5px;
+
+}
+
+.bot-description-event p{
+  font-size: 12px;
+}
+
+.box-include{
+  width: 100%;
+  float: left;
+  padding: 5px;
+}
+
+.box-include h5{
+  width: 100%;
+  font-style: italic;
+}
+
+.box-include span{
+  font-weight: 400;
+}
+
+.box-btn-parch{
+  width: 100%;
+  background-color: #ff0984;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+
+
+
+/*  END ALMOST-HAPPENING SECTION*/
+
