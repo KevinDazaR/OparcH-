@@ -345,50 +345,10 @@ header {
   font-size: 12px;
 }
 
-/*START MAIN CONTENT*/
+/*END MAIN CONTENT*/
 
 
-/*BOT MENU - FIXED */
 
-#menu-bot{
-  width: 100%;
-  height: 80px;
-  background-color: var(--main-pink-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  bottom: 0;
-  position: sticky;
-  border-top:black 2px solid;
-
-}
-
-.boxes-menu-bot{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.boxes-menu-bot i{
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.boxes-menu-bot span{
-  font-size: 10px;
-  font-weight: 300;
-  color: white;
-}
 
 /*  START ALMOST-HAPPENING SECTION*/
 
@@ -422,7 +382,8 @@ height: auto;
 
 .box-container-carrousel-events{
   width: 4000px;
-  height: 250px;
+  height: auto;
+  margin-bottom: 10px;
   padding: 4px;
   display: flex;
   gap: 20px;
@@ -550,3 +511,145 @@ justify-content: space-evenly;
 
 /*  END ALMOST-HAPPENING SECTION*/
 
+/* START ABOUT US SECTION */
+
+#about-us{
+  width: 100%;
+  height: auto;
+  margin-left:  10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box-separator-section-about-us{
+  width: 100%;
+  height: 80px;
+  background-color: var(--main-pink-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  margin-left: -10px !important;
+  margin-bottom: 10px;
+}
+
+.box-separator-section-about-us h4{
+font-size: 15px;
+font-weight: 300;
+color: white;
+text-align: center;
+}
+
+.box-separator-section-about-us h4>b{
+color: rgb(0, 255, 234);
+}
+
+.box-separator-section-about-us h4>a{
+  color: rgb(0, 255, 98);
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 400;
+  }
+
+.box-tittle-about-us{
+  width: 100%;
+
+}
+
+.box-tittle-about-us >h4{
+  font-size: 16px;
+  width: 80px;
+
+  border-bottom: var(--main-pink-color) 4px solid;
+}
+
+#about-us >h5{
+  font-size: 14px;
+  width: 90%;
+  font-style: italic;
+}
+
+#about-us >h6{
+  font-size: 13px;
+  width: 92%;
+  padding-right: 10px;
+  text-align: right;
+  border: 1px solid;
+  background-color: #ff0984;
+  color:white;
+  font-weight: 500;
+  padding: 4px;
+}
+
+#about-us >p{
+  font-size: 12px;
+  width: 90%;
+  text-align: left;
+}
+
+#about-us > h5:first-of-type{
+  text-align: center;
+  color: var(--main-pink-color);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+
+}
+
+#about-us > h5:first-of-type span{
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+
+
+
+/* END ABOUT US SECTION */
+
+
+/*BOT MENU - FIXED */
+
+#menu-bot{
+  width: 100%;
+  height: 80px;
+  background-color: var(--main-pink-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  position: sticky;
+  border-top:black 2px solid;
+
+}
+
+.boxes-menu-bot{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.boxes-menu-bot i{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.boxes-menu-bot span{
+  font-size: 10px;
+  font-weight: 300;
+  color: white;
+}
