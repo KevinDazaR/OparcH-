@@ -176,8 +176,8 @@ header {
 }
 
 .event-box {
-  width: 80%;
-  height: 300px;
+  width: 90%;
+  height: auto;
   background-color: white;
   margin: auto;
   padding: 20px;
@@ -270,6 +270,149 @@ header {
 .box-carrousel-circles-img-event a:first-of-type {
   background-color: aqua;
 }
+
+.box-container-info-event{
+  width: 100%;
+  padding: 10px;
+  border: black 1px solid;
+  display: flex;
+}
+
+.box-left-info-event{
+  width: auto;
+  display: flex;
+  align-items: center;
+
+}
+
+.box-img-account{
+  width: auto;
+  padding: 5px;
+  background-color: #ff0984;
+}
+
+.box-img-account img{
+  width: 40px;
+  height: 40px;
+}
+
+.box-account{
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.box-account-top{
+  display: flex;
+}
+
+#nickname-post{
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.box-account-top i{
+  background-color: blue;
+  border-radius: 50%;
+  padding: 2px;
+  width: 10px;
+  height: 10px;
+  color: white;
+  font-size: 6px;
+  position: relative;
+  top: 26%;
+  margin-left: 2px;
+}
+
+.box-account-bot{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  color: green;
+  padding-left: 5px;
+
+}
+
+#followers-account{
+  width: 100%;
+  font-size: 12px;
+}
+
+.box-account-bot span{
+  width: 100%;
+  font-size: 12px;
+
+}
+
+.box-mid-post-info {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.box-mid-post-info i{
+  width: 10px;
+  font-size: 35px;
+  color: var(--main-pink-color);
+  transform: rotate(63deg);
+  position: relative;
+  top: 0;
+}
+
+.box-right-info-event{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-event-type{
+  width: auto;
+}
+
+.box-top-event-type{
+  display: flex;
+  width: 80%;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.box-top-event-type a{
+  font-size: 14px;
+  width: 30%;
+}
+
+.box-top-event-type span{
+  font-size: 14px;
+  color: #ff0984;
+}
+
+.box-bot-event-type{
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.box-bot-event-type a{
+  font-size: 12px;
+}
+
+
+
+
+
 
 /* END MAIN - EVENT */
 
