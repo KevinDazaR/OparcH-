@@ -176,7 +176,7 @@ header {
 }
 
 .event-box {
-  width: 90%;
+  width: 100%;
   height: auto;
   background-color: white;
   margin: auto;
@@ -184,7 +184,7 @@ header {
 }
 
 .tittle-event {
-  width: 90%;
+  width: 100%;
 }
 
 .tittle-event h3 {
@@ -194,11 +194,18 @@ header {
 }
 
 .box-located-event {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: stretch;
   align-items: center;
 }
+
+.located-event{
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
 
 .box-located-event {
   width: auto;
@@ -218,7 +225,7 @@ header {
 }
 
 .box-date-event {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: stretch;
   align-items: center;
@@ -235,7 +242,7 @@ header {
 }
 
 .img-event {
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -351,20 +358,22 @@ header {
 }
 
 .box-mid-post-info {
-  width: auto;
+  width: 10px;
+  margin: 5px 5px 5px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  position: relative;
 }
 
-.box-mid-post-info i{
-  width: 10px;
-  font-size: 35px;
+.box-mid-post-info i {
+  width: 100%;
+  font-size: 40px;
   color: var(--main-pink-color);
   transform: rotate(63deg);
-  position: relative;
-  top: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
 }
 
 .box-right-info-event{
@@ -381,14 +390,14 @@ header {
 
 .box-top-event-type{
   display: flex;
-  width: 80%;
+  width: 100%;
   gap: 4px;
   flex-wrap: wrap;
 }
 
 .box-top-event-type a{
   font-size: 14px;
-  width: 30%;
+  width: auto;
 }
 
 .box-top-event-type span{
@@ -399,14 +408,16 @@ header {
 .box-bot-event-type{
   width: auto;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: stretch;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
 }
 
 
 .box-bot-event-type a{
-  font-size: 12px;
+  font-size: 11px;
+  color: blue;
 }
 
 
