@@ -5,7 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  text-decoration: none !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /*RESET BUTTONS*/
@@ -94,7 +100,6 @@ header {
 .box-profile-img {
   width: 72px;
   height: 72px;
-
   border-radius: 50%;
   background-color: yellow;
   display: flex;
@@ -107,6 +112,9 @@ header {
   height: 65px;
   border-radius: 50%;
 }
+
+
+
 
 /*END HEADER NAV*/
 
@@ -143,7 +151,7 @@ header {
 
 #section-top-profile {
   width: 100%;
-  height: 200px;
+  height: 215px;
   background-color: var(--main-pink-color);
   display: flex;
   position: relative;
@@ -151,14 +159,15 @@ header {
 }
 
 .box-profile-photo {
-  width: 50%;
-  height: 220px;
+  width: 45%;
+  height: 235px;
   border: white 4px solid;
   display: flex;
   justify-content: center;
   align-content: center;
-  position: relative;
+  position: absolute;
   top: -10px;
+  margin-left: 10px;
 }
 
 .box-profile-photo img {
@@ -166,14 +175,41 @@ header {
   height: auto;
 }
 
+.box-container-bot-rigth-profile {
+  width: 50%;
+  height: 95%;
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  z-index: 999;
+  right: 18px;
+  justify-content: end;
+  align-items: end;
+}
+
+.box-container-bot-rigth-profile i {
+  color: white;
+}
+
+.box-container-bot-rigth-profile i:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
 .box-right-top-profile {
   width: 50%;
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .box-container-top-rigth-profile {
   width: auto;
-  margin: 10px 4px 5px 4px;
+  margin: 0px 10px 0px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -194,19 +230,20 @@ header {
 
 .boxes-counters a {
   font-size: 10px;
-  color: rgb(245, 245, 245);
+  color: white;
   font-weight: 500;
 }
 
 .separator-boxes-counters {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 200;
+  margin: 4px 0px 4px 0px;
 }
 
 .box-container-mid-rigth-profile {
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 .description-profile {
@@ -215,23 +252,6 @@ header {
   font-style: italic;
 }
 
-.box-container-bot-rigth-profile {
-  width: 100%;
-  margin-top: 10px;
-  display: flex;
-  gap: 5px;
-  justify-content: end;
-  align-content: center;
-}
-
-.box-container-bot-rigth-profile i {
-  color: white;
-}
-
-.box-container-bot-rigth-profile i:hover {
-  color: aqua;
-  cursor: pointer;
-}
 
 #section-mid-profile {
   width: 95%;

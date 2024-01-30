@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*RESET BUTTONS*/
 
 button {
@@ -115,6 +119,9 @@ header {
   display: flex;
   justify-content: space-evenly;
   margin: 10px;
+  position: sticky;
+  background-color: white;
+  z-index: 3;
 }
 
 .container-box-left-top-sections {
@@ -172,15 +179,17 @@ header {
 
 #post-section-info {
   width: 100%;
+  height: 100%;
   background-color: var(--main-pink-color);
+  padding-top: 20px;
 }
 
 .event-box {
-  width: 100%;
+  width: 96%;
   height: auto;
   background-color: white;
-  margin: auto;
   padding: 20px;
+  margin: auto;
 }
 
 .tittle-event {
@@ -188,47 +197,58 @@ header {
 }
 
 .tittle-event h3 {
+  margin-top: 20px;
   color: var(--main-pink-color);
-  font-size: 16px;
+  margin: 0px 0px 10px 0px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .box-located-event {
   width: 100%;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.box-located-event span{
+  width: 10px;
+  font-size: 30px;
+margin: 0px 4px 0px 4px;
 }
 
 .located-event{
+width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 5px;
 }
 
 
-.box-located-event {
-  width: auto;
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
-}
-
 .box-located-event h5 {
+  width: 70%;
   font-size: 14px;
   font-weight: 300;
   color: rgb(72, 211, 72);
 }
 
 .box-from-you {
-  width: auto;
+  width: 50%;
 }
+
+.box-from-you h5{
+  width: 70%;
+}
+
 
 .box-date-event {
   width: 100%;
   display: flex;
   justify-content: stretch;
   align-items: center;
+  margin: 10px 0px 10px 0px;
 }
 
 .box-date-event i {
@@ -437,7 +457,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  bottom: 0;
+  bottom: 0px;
   position: sticky;
   border-top: black 2px solid;
 }
