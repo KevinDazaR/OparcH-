@@ -46,7 +46,7 @@ width: auto;
 
 #ohparch-app {
 margin: auto;
-width: 385px;
+width: 400px;
 height: 100vh;
 border: black 8px double;
 border-radius: 13%;
@@ -54,6 +54,7 @@ overflow-x: hidden;
 overflow-y: scroll;
 position: relative;
 }
+
 
 header {
 width: 100%;
@@ -140,19 +141,48 @@ margin-bottom: 15px;
 .box-hamburger-menu {
     display: flex;
     width: auto;
+    position: relative;
 
 }
+
+#checkbox-hamburger-menu{
+    position: absolute;
+    z-index: 99;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+}
+
+.box-hamburger-menu i:hover{
+    cursor: pointer;
+
+}
+
+/* .box-hamburger-menu input:hover ~ .box-hamburger-menu input i{
+    background-color: red;
+    color: black;
+    z-index: 99;
+
+}
+
+.box-hamburger-menu i:hover + #checkbox-hamburger-menu {
+
+} */
 
 .box-hamburger-menu i {
     font-size: 35px;
     font-weight: 800;
+    z-index: 2;
     width: 100%;
+    position: relative;
     color: var(--main-pink-color);
+    background-color: white;
 }
 
-.box-hamburger-menu i:hover {
-    cursor: pointer;
-}
+/* .box-hamburger-menu i:hover {
+    /* cursor: pointer;
+} */
 
 .text-hamburger-menu {
 margin-left: 5px;
@@ -235,9 +265,6 @@ left: 5px;
 }
 
 
-
-
-  
 /*END OPTIONS TOP*/
 
 
@@ -245,27 +272,29 @@ left: 5px;
 /*START FILTER BY*/
 
 #box-container-search-for{
-width: 100%;
-height: 100%;
-position: absolute;
-z-index: 998;
-background-color: white;
-position: relative;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    z-index: 998;
+    background-color: white;
+    position: relative;
 }
 
-.box-left-side{
-width: 40%;
-height: auto;
-padding: 20px;
-border: black 1px solid;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-content: space-around;
-border-radius: 3px;
-position: absolute;
-left: -2px;
 
+
+.box-left-side{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 3px;
+    position: absolute;
+    left: -2px;
+    background-color: white;
 }
 
 #filter-for{
@@ -325,6 +354,178 @@ background-color: rgba(0, 0, 255, 0.041);
 
 
 
+/* MAIN CONTENT - EVENTS START */
+
+
+#content-explorer{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+.container-boxes-event{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.box-container-carrousel-events {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-image: var(--color-navs-bar);
+    overflow: scroll;
+
+}
+
+.box-carrousel-event {
+    width: 180px;
+    width: 40%;
+    height: 200px;
+    background-image: url(../imgs/peñol);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    border: green 1px solid;
+    transition-duration: 0.5s;
+   transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+   margin: 0px 10px 10px 10px;
+}
+
+
+.box-carrousel-event:hover{
+    background-image: url(../imgs/peñol);
+    background-size: 135%;
+    z-index: 4;
+}
+
+.box-carrousel-event:hover >.bot-description-event p {
+    font-size: 10px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+}
+
+
+.box-carrousel-event::before {
+    content: "";
+    width: 180px;
+    height: 200px;
+    background-color: rgba(0, 255, 255, 0.103);
+    position: absolute;
+    
+}
+  
+
+  
+.box-description-event-carrousel {
+    margin: 2px 2px 2px 2px;
+    width: 100%;
+    color: white;
+    height: 55%;
+    display: flex;
+    align-items: end;
+    position: relative;
+    z-index: 3;
+}
+  
+.box-description-event-carrousel h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box-description-event-carrousel span {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.bot-description-event {
+    width: 100%;
+    margin-top: 2px;
+    padding: 5px;
+    position: relative;
+    z-index: 3;
+}
+
+.bot-description-event p {
+    font-size: 10px;
+    width: 100%;
+}
+
+.info-event {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2px 2px 5px 3px;
+    font-weight: 400;
+}
+  
+
+.info-event p{
+font-size: 10px;
+color: green;
+font-weight: 600;
+}
+  
+.date-event {
+    width: auto;
+}
+  
+
+.hour-event {
+    width: auto;
+}
+
+.box-include {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+
+.box-include h5 {
+    width: 100%;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.box-include span {
+    font-weight: 400;
+}
+
+.box-btn-parch {
+    width: 100%;
+    background-color: #ff0984;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+/* END MAIN CONTENT - EVENTS  */
+
+
+
 
 
 
@@ -334,40 +535,66 @@ background-color: rgba(0, 0, 255, 0.041);
 /*BOT MENU - FIXED */
 
 #menu-bot {
-width: 100%;
-height: 80px;
-background-color: var(--main-pink-color);
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-bottom: 0;
-z-index: 999;
-position: sticky;
-border-top: black 2px solid;
-}
-
-.boxes-menu-bot {
-width: 50px;
-height: 50px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.boxes-menu-bot i {
-width: 40px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: white;
-border-radius: 50%;
-}
-
-.boxes-menu-bot span {
-font-size: 10px;
-font-weight: 300;
-color: white;
-}
+    width: 100%;
+    height: 80px;
+    background-color: var(--main-pink-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    bottom: 0;
+    z-index: 999;
+    position: sticky;
+    border-top: black 2px solid;
+  }
+  
+  .boxes-menu-bot {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .boxes-menu-bot i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    border: black 1px solid;
+  }
+  
+  .boxes-menu-bot span {
+    font-size: 10px;
+    font-weight: 300;
+    color: white;
+  }
+  
+  
+  .box-publicar{
+    position: relative;
+    height: 100px;
+    height: 100px;
+    bottom: 10px;
+    margin: 0px 10px 0px 10px ;
+  }
+  
+  .box-publicar i{
+    position: relative;
+    height: 90px;
+    font-size: 35px;
+    width: 90px;
+    display: flex;
+  
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .box-publicar span{
+  color: black;
+  }

@@ -45,7 +45,7 @@ body {
 
 #ohparch-app {
   margin: auto;
-  width: 385px;
+  width: 400px;
   height: 100vh;
   border: black 8px double;
   border-radius: 13%;
@@ -380,6 +380,94 @@ header {
   font-weight: 500;
 }
 
+
+
+
+/* START MAIN CONTENT FOLLOWED*/
+
+#nav-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.nav-item a{
+  font-size: 14px;
+  color: var(--main-pink-color)
+}
+
+.tab-pane{
+  width: 100% !important;
+}
+
+.tab-pane h2{
+  font-size: 15px !important;
+  color: violet;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+.container-followed{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+
+.box-followed-account {
+  display: flex;
+  width: 45%;
+  margin-right: 5px;
+}
+
+
+.box-followed-account img{
+  width: 40px;
+  height: 40px;
+  margin-right: 2px;
+}
+
+.text-followed-account{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+}
+
+.box-followed-account a{
+  font-size: 12px;
+  height: 30%;
+}
+
+.box-followed-account p{
+  font-style: italic;
+  font-size: 10px;
+  height: 30%;
+}
+
+
+
+/* END MAIN CONTENT FOLLOWED*/
+
+
+
+
+
+
+
+
+
+
+
 /*BOT MENU - FIXED */
 
 #menu-bot {
@@ -391,6 +479,7 @@ header {
   align-items: center;
   gap: 10px;
   bottom: 0;
+  z-index: 999;
   position: sticky;
   border-top: black 2px solid;
 }
@@ -402,6 +491,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .boxes-menu-bot i {
@@ -412,10 +502,35 @@ header {
   align-items: center;
   background-color: white;
   border-radius: 50%;
+  border: black 1px solid;
 }
 
 .boxes-menu-bot span {
   font-size: 10px;
   font-weight: 300;
   color: white;
+}
+
+
+.box-publicar{
+  position: relative;
+  height: 100px;
+  height: 100px;
+  bottom: 10px;
+  margin: 0px 10px 0px 10px ;
+}
+
+.box-publicar i{
+  position: relative;
+  height: 90px;
+  font-size: 35px;
+  width: 90px;
+  display: flex;
+
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-publicar span{
+color: black;
 }
