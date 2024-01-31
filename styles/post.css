@@ -175,18 +175,21 @@ header {
   left: 5px;
 }
 
+
+
 /* MAIN - EVENT */
 
 #post-section-info {
   width: 100%;
-  height: 100%;
+height: auto;
+  padding-bottom: 20px;
   background-color: var(--main-pink-color);
   padding-top: 20px;
 }
 
 .event-box {
   width: 96%;
-  height: auto;
+  height: 100%;
   background-color: white;
   padding: 20px;
   margin: auto;
@@ -362,7 +365,7 @@ header {
   color: blue;
 }
 
-#nickname-post:hover {
+#nickname-post:hover, #nickname-post:active {
   cursor: pointer;
   border-radius: 5px;
   background-color: rgba(0, 0, 255, 0.041);
@@ -463,7 +466,7 @@ header {
   color: blue;
 }
 
-.box-bot-event-type a:hover {
+.box-bot-event-type a:hover, .box-bot-event-type a:active {
   text-decoration: underline;
   cursor: pointer;
   border-radius: 5px;
@@ -486,6 +489,7 @@ header {
 
 .box-container-insignes {
   width: 80%;
+  height: auto;
   margin: auto;
   display: flex;
   align-items: center;
@@ -503,6 +507,7 @@ header {
 .box-left-container-insignes,
 .box-right-container-insignes {
   width: 50%;
+  height: 100%;
 }
 
 .box-container-event-insignes,
@@ -526,11 +531,10 @@ header {
   font-size: 14px;
 }
 
-.box-container-insignes i:hover {
+.box-container-insignes i:hover, .box-container-insignes i:active {
   border: #ff0984 1px solid;
   color: #ff0984;
   background-color: white;
-
   transition: all;
   cursor: pointer;
 }
@@ -564,6 +568,14 @@ header {
   font-style: italic;
 }
 
+#price-event b{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  }
+  
+  
+
 #views-event {
   font-size: 14px;
   color: rgb(10, 10, 197);
@@ -588,7 +600,7 @@ header {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.box-container-actions-event i:hover {
+.box-container-actions-event i:hover, .box-container-actions-event i:active {
   cursor: pointer;
   background-color: rgb(235 51 144);
   color: white;
@@ -611,7 +623,7 @@ header {
   border-radius: 3px;
 }
 
-.box-btn-parch button:hover {
+.box-btn-parch button:hover, .box-btn-parch button:active{
   cursor: pointer;
   background-color: var(--main-pink-color);
   color: white;

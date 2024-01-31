@@ -181,6 +181,92 @@ header {
   left: 5px;
 }
 
+/*END OPTIONS TOP*/
+
+
+
+/*START FILTER BY*/
+
+#box-container-search-for{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 998;
+  background-color: white;
+}
+
+.box-left-side{
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+
+}
+
+#filter-for{
+  width: 100%;
+  font-size: 10px;
+  text-align: right;
+}
+
+.box-for-date, .box-for-time, .box-for-daytime, .box-for-category{
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  margin-bottom: 10px;
+}
+
+
+.box-for-date h4, .box-for-time h4, .box-for-daytime h4, .box-for-category h4{
+  font-size: 14px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.box-for-date i{
+  margin-top: 4px;
+  font-size: 30px;
+  color: var(--main-pink-color);
+}
+
+.box-for-date label, .box-for-time label, .box-for-daytime label, .box-for-category label{
+  width: 80%;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.box-for-date input, .box-for-time input, .box-for-daytime input, .box-for-category input{
+  width: 10%;
+  height: 100%;
+  margin-top: 2px;
+}
+
+#show-more{
+  font-size: 12px;
+  color: blue;
+}
+
+#show-more:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 255, 0.041);
+}
+
+
+
+/*END FILTER BY*/
+
+
+
+
 /*START MAIN-CONTENT SECTION"*/
 
 #main-content {
@@ -635,6 +721,7 @@ header {
   align-items: center;
   gap: 10px;
   bottom: 0;
+  z-index: 999;
   position: sticky;
   border-top: black 2px solid;
 }
@@ -646,6 +733,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .boxes-menu-bot i {
@@ -656,10 +744,35 @@ header {
   align-items: center;
   background-color: white;
   border-radius: 50%;
+  border: black 1px solid;
 }
 
 .boxes-menu-bot span {
   font-size: 10px;
   font-weight: 300;
   color: white;
+}
+
+
+.box-publicar{
+  position: relative;
+  height: 100px;
+  height: 100px;
+  bottom: 10px;
+  margin: 0px 10px 0px 10px ;
+}
+
+.box-publicar i{
+  position: relative;
+  height: 90px;
+  font-size: 35px;
+  width: 90px;
+  display: flex;
+
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-publicar span{
+color: black;
 }
