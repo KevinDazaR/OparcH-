@@ -9,7 +9,6 @@
   font-family: "Montserrat", sans-serif !important;
 }
 
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -112,9 +111,6 @@ header {
   height: 65px;
   border-radius: 50%;
 }
-
-
-
 
 /*END HEADER NAV*/
 
@@ -252,7 +248,6 @@ header {
   font-style: italic;
 }
 
-
 #section-mid-profile {
   width: 95%;
   margin: auto;
@@ -380,12 +375,9 @@ header {
   font-weight: 500;
 }
 
-
-
-
 /* START MAIN CONTENT FOLLOWED*/
 
-#nav-tab{
+#nav-tab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,25 +385,24 @@ header {
   gap: 10px;
 }
 
-.nav-item a{
+.nav-item a {
   font-size: 14px;
-  color: var(--main-pink-color)
+  color: var(--main-pink-color);
 }
 
-.tab-pane{
+.tab-pane {
   width: 100% !important;
+  padding: 2px !important;
 }
 
-.tab-pane h2{
+.tab-pane h2 {
   font-size: 15px !important;
   color: violet;
   font-weight: 400;
   font-style: italic;
 }
 
-
-
-.container-followed{
+.container-followed {
   height: 400px;
   width: 100%;
   display: flex;
@@ -421,21 +412,19 @@ header {
   overflow-y: scroll;
 }
 
-
 .box-followed-account {
   display: flex;
   width: 45%;
   margin-right: 5px;
 }
 
-
-.box-followed-account img{
+.box-followed-account img {
   width: 40px;
   height: 40px;
   margin-right: 2px;
 }
 
-.text-followed-account{
+.text-followed-account {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -443,30 +432,133 @@ header {
   align-items: self-start;
 }
 
-.box-followed-account a{
+.box-followed-account a {
   font-size: 12px;
   height: 30%;
 }
 
-.box-followed-account p{
+.box-followed-account p {
   font-style: italic;
   font-size: 10px;
   height: 30%;
 }
 
+.container-insignes {
+  width: 100% !important;
+  padding: 5px;
+}
 
+.box-container-points {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-container-points p {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#parche-points {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(153, 255, 0);
+  padding: 5px;
+  background-color: rgba(0, 151, 0, 0.863);
+}
+
+.box-container-level {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-container-level p {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#levelHTML {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  background-color: rgb(255, 238, 0);
+}
+
+.progress {
+  width: 100%;
+  background-color: #ff0984 !important;
+}
+
+.box-text-insignes-get-more {
+  width: 100%;
+  height: auto;
+}
+
+.box-text-insignes-get-more p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.box-container-insignes-all {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: black 1px solid;
+  padding: 10px;
+}
+
+.boxes-insigne {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  height: 70px;
+  position: relative;
+}
+
+.boxes-insigne img {
+  width: 100%;
+  height: auto;
+}
+
+.boxes-insigne p {
+  font-size: 10px;
+  text-align: center;
+}
+
+.boxes-insigne-description {
+  display: none;
+  width: 80px;
+  background-color: rgb(7, 255, 255);
+  position: absolute;
+  border-radius: 4px;
+  height: auto;
+  padding: 3px;
+  top: 65px;
+  z-index: 888;
+}
+
+.boxes-insigne-description p {
+  font-size: 10px;
+  color: rgb(0, 38, 255);
+  margin: auto;
+  font-weight: 500;
+  text-align: center;
+}
+
+.boxes-insigne:hover > .boxes-insigne-description {
+  display: block;
+}
 
 /* END MAIN CONTENT FOLLOWED*/
-
-
-
-
-
-
-
-
-
-
 
 /*BOT MENU - FIXED */
 
@@ -491,7 +583,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .boxes-menu-bot i {
@@ -511,16 +602,15 @@ header {
   color: white;
 }
 
-
-.box-publicar{
+.box-publicar {
   position: relative;
   height: 100px;
   height: 100px;
   bottom: 10px;
-  margin: 0px 10px 0px 10px ;
+  margin: 0px 10px 0px 10px;
 }
 
-.box-publicar i{
+.box-publicar i {
   position: relative;
   height: 90px;
   font-size: 35px;
@@ -531,6 +621,6 @@ header {
   gap: 10px;
 }
 
-.box-publicar span{
-color: black;
+.box-publicar span {
+  color: black;
 }
