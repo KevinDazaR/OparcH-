@@ -9,23 +9,23 @@
   }
   
 ::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 
 /*RESET BUTTONS*/
 
 button {
-border: none;
-margin: 0;
-padding: 0;
-width: auto;
-overflow: visible;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
 
-background: transparent;
-color: inherit;
-font: inherit;
-line-height: normal;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
 }
 
 /*VARIABLES */
